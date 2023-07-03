@@ -8,33 +8,196 @@
 }
 .contenedor{
     width: 100%;
-    height: 100%;
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     margin:auto;
     justify-content: center;
     align-items: center;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+   
 
+}
+.body{
+    position: relative;
+    width: 100vh;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
 }
 .pelicula{
     display: flex;
-    width: 350px;
-    height: 400px;
-    background-color: rgb(182, 182, 182);
-    margin: 20px 20px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+    width: 300px;
+    height: 450px;
+    margin: 20px 20px 20px 0;
+    align-items:self-start;
     flex-direction: column;
+    border-radius: 5px;
+    background-color: rgb(233, 233, 233);
+    font-family: 'Poppins', sans-serif;
+  
     
-    
+}
+.super{
+    display: block;
+}
+.score{
+    position: relative;
+    width: 42%;
+    text-transform: uppercase;
+    padding: 10px 14px;
+    line-height: 1;
+    border-radius: 5px;
+    display: flex;
+    z-index: 1;
+    margin-top: -59px;
+    color: #ffffff;
+    font-weight: 300;
+    background-color: rgb(252, 77, 77);
 }
 .titulo{
-    margin-top: 10px;
+    margin-top: 30px;
 }
 .pelicula img{
-    height: 300px;
+   
     width: 300px;
-    min-width: 100px;
+    height: 300px;
+    border-radius: 5px;
 
 }
+.titulosa{
+    display: flex;
+    width: 100%;
+   
+    flex-direction: column;
+}
+nav{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px -9px 10px 8px rgba(0,0,0,0.75);
+    
+}
+.nav-1{
+    display: flex;
+    width: 70%;
+    
+    align-items: center;
+}
+
+.nav-1 .logo {
+    margin:0  20px;
+}
+.logo img{
+    width: 240px;
+    height: 60px;
+}
+.nav-1 a{
+    padding: 15px;
+    text-decoration: none;
+    color: rgb(116, 116, 116);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.nav-2{
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center ;
+    margin-right: 30px;
+    height: 80px;
+}
+.nav-2 a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+.paginacion {
+   margin-bottom: auto;
+	background: #100a1f;
+    height: 70px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	padding: 10px;
+    z-index: 2;
+}
+
+.paginacion button {
+	cursor: pointer;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 50px;
+	width: 200px;
+	background: #241744;
+	color: #fff;
+	border-radius: 100px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	transition: .3s ease all;
+}
+
+.paginacion button:hover {
+	background: #137c32;
+}
+.carousel{
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 700px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.carousel img{
+    width: 500px;
+    height: 350px;
+  
+    border-radius: 10px;
+}
+.carousel a{
+    background-color: hsl(0, 98%, 61%);
+    padding: 10px 14px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: #fff;
+}
+.carousel h2{
+    font-weight: 600;
+    border-radius: 6px;
+    background-color: #2417443f;
+    padding-bottom: 5px;
+}
+#color1{
+    color: rgb(255, 208, 146);
+}
+span{
+    font-weight: 600;
+    color: rgb(255, 65, 65);
+}
+@media (max-width: 700px) {
+    /* … */
+    .nav-1 a{
+        display: none;
+        width: 100vh;
+    }
+    .carousel img{
+        width: 200px;
+        height: 350px;
+      
+        border-radius: 10px;
+    }
+    .carousel{
+        width: 300px;
+    margin-left: 0;    }
+  }
