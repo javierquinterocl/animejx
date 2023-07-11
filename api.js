@@ -32,7 +32,7 @@ const anime = async () => {
             jsontrad.data.forEach(ani => {
                 animess = animess + `
            
-                <div class="pelicula">
+                <div class="pelicula" id="${ani.mal_id}">
                 <div class="super">
                 <img class="imagen" src="${ani.images.jpg.large_image_url}">
                       <a class="score"> ${ani.source}</a>
@@ -51,6 +51,8 @@ const anime = async () => {
 
             });
             document.getElementById("Contenedor").innerHTML = animess;
+
+            
             
         
         } else if (animesp.status === 401) {
