@@ -18,8 +18,8 @@ btnAnterior.addEventListener('click', () => {
 
 
 const anime = async () => {
-    try {
-        const animesp = await fetch(`https://api.jikan.moe/v4/seasons/now?page=${pagina}&limit=24`);
+    try {                             
+        const animesp = await fetch(`https://api.jikan.moe/v4/top/anime?page=${pagina}&limit=24`);
 
         if (animesp.status === 200) {
             const jsontrad = await animesp.json();
