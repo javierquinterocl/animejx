@@ -32,7 +32,8 @@ const anime = async () => {
             jsontrad.data.forEach(ani => {
                 animess = animess + `
            
-                <div class="pelicula" id="${ani.mal_id}">
+                <div class="pelicula" id="${ani.mal_id}"  data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom">
                 <div class="super">
                 <img class="imagen" src="${ani.images.jpg.large_image_url}">
                       <a class="score"> ${ani.source}</a>
